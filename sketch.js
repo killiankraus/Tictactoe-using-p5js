@@ -115,7 +115,7 @@ let board = [
       let resultP = createP('');
       resultP.style('font-size', '32pt');
       if (result == 'tie') {
-        resultP.style('color','yellow');
+        resultP.style('color','chocolate');
         resultP.html('Tie!');
       } else {
         resultP.style('color','Red');
