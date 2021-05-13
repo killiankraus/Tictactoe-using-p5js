@@ -17,6 +17,7 @@ namespace SIA.Models.Repository
             string EncrptKey = username;
             byte[] byKey = { };
             byte[] IV = { 18, 52, 86, 120, 144, 171, 205, 239 };
+            // Comment Byte
             byKey = System.Text.Encoding.UTF8.GetBytes(EncrptKey.Substring(0, 8));
             DESCryptoServiceProvider des = new DESCryptoServiceProvider();
             byte[] inputByteArray = Encoding.UTF8.GetBytes(pass);
